@@ -1,221 +1,258 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nathan Histed | Official Artist Site</title>
-    
-    <!-- SEO & Metadata -->
-    <meta name="description" content="Official home of Nathan Histed. Explore the 'IT'S TIME' cinematic anthology. Cinematic R&B/Pop.">
-    <meta name="keywords" content="Nathan Histed, Rock Bottom, 20 Seconds, Cinematic R&B, Mental Health, Recovery">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Syne:wght@700;800&display=swap');
-
-        :root {
-            --accent-teal: #2BB6AF;
-            --accent-gold: #D4AF37;
-            --deep-navy: #05070A;
-        }
-
-        html { scroll-behavior: smooth; }
-        body {
-            background-color: var(--deep-navy);
-            color: white;
-            font-family: 'Inter', sans-serif;
-            margin: 0;
-            overflow-x: hidden;
-        }
-
-        /* Fixed Background - Brand Identity */
-        .hero-bg {
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: linear-gradient(to bottom, rgba(5, 7, 10, 0.2), rgba(5, 7, 10, 0.98)), 
-                        url('image.png'); /* Main Hero Image */
-            background-size: cover;
-            background-position: center;
-            z-index: -1;
-        }
-
-        .syne { font-family: 'Syne', sans-serif; }
-        
-        .section-container {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 4rem 1rem;
-            position: relative;
-        }
-
-        .content-panel {
-            width: 100%;
-            max-width: 1100px;
-            animation: fadeIn 1.5s ease-out;
-        }
-
-        .anthology-slide {
-            width: 100%;
-            border-radius: 12px;
-            box-shadow: 0 40px 100px rgba(0,0,0,0.9);
-            border: 1px solid rgba(255,255,255,0.05);
-            transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
-        }
-        .anthology-slide:hover { transform: scale(1.015); }
-
-        .glass-ui {
-            background: rgba(255, 255, 255, 0.03);
-            backdrop-filter: blur(30px);
-            -webkit-backdrop-filter: blur(30px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 32px;
-        }
-
-        .countdown-box {
-            background: rgba(0,0,0,0.8);
-            border-bottom: 2px solid var(--accent-teal);
-            padding: 1.25rem;
-            border-radius: 20px;
-            min-width: 85px;
-        }
-
-        .btn-action {
-            background: white;
-            color: black;
-            font-weight: 900;
-            text-transform: uppercase;
-            letter-spacing: 0.2em;
-            padding: 1.5rem 3.5rem;
-            border-radius: 9999px;
-            transition: all 0.4s ease;
-            font-size: 0.8rem;
-        }
-        .btn-action:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 50px rgba(255,255,255,0.4);
-        }
-
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
-        
-        .scroll-hint {
-            position: absolute;
-            bottom: 3rem;
-            left: 50%;
-            transform: translateX(-50%);
-            animation: bounce 2s infinite;
-            opacity: 0.5;
-        }
-        @keyframes bounce { 0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 40% {transform: translateY(-10px);} 60% {transform: translateY(-5px);} }
-    </style>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2299.5">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #6d6d6d; -webkit-text-stroke: #6d6d6d}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #6b0001; -webkit-text-stroke: #6b0001}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #fb0007; -webkit-text-stroke: #fb0007}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #0000ff; -webkit-text-stroke: #0000ff}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; -webkit-text-stroke: #000000}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; -webkit-text-stroke: #000000; min-height: 16.0px}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #4d5055; -webkit-text-stroke: #4d5055}
+    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #18702b; -webkit-text-stroke: #18702b}
+    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #093c94; -webkit-text-stroke: #093c94}
+    span.s1 {font-kerning: none; background-color: #ecf1f7}
+    span.s2 {font-kerning: none; color: #fb0007; background-color: #ecf1f7; -webkit-text-stroke: 0px #fb0007}
+    span.s3 {font-kerning: none; color: #2a2a2a; background-color: #ecf1f7; -webkit-text-stroke: 0px #2a2a2a}
+    span.s4 {font-kerning: none; color: #000000; background-color: #ecf1f7; -webkit-text-stroke: 0px #000000}
+    span.s5 {font-kerning: none; color: #0000ff; background-color: #ecf1f7; -webkit-text-stroke: 0px #0000ff}
+    span.s6 {font-kerning: none; color: #6b0001; background-color: #ecf1f7; -webkit-text-stroke: 0px #6b0001}
+    span.s7 {font-kerning: none; color: #6f0ec3; background-color: #ecf1f7; -webkit-text-stroke: 0px #6f0ec3}
+    span.s8 {font-kerning: none; color: #093c94; background-color: #ecf1f7; -webkit-text-stroke: 0px #093c94}
+    span.s9 {font-kerning: none}
+    span.s10 {font-kerning: none; color: #18702b; background-color: #ecf1f7; -webkit-text-stroke: 0px #18702b}
+    span.s11 {font-kerning: none; color: #137646; background-color: #ecf1f7; -webkit-text-stroke: 0px #137646}
+    span.s12 {font-kerning: none; color: #4d5055; background-color: #ecf1f7; -webkit-text-stroke: 0px #4d5055}
+    span.s13 {font-kerning: none; color: #0e6e6d; background-color: #ecf1f7; -webkit-text-stroke: 0px #0e6e6d}
+    span.s14 {font-kerning: none; color: #a4450b; background-color: #ecf1f7; -webkit-text-stroke: 0px #a4450b}
+  </style>
 </head>
 <body>
-
-    <div class="hero-bg"></div>
-
-    <!-- 1. THE LAUNCH HUB -->
-    <section class="section-container">
-        <div class="text-center mb-12">
-            <h1 class="syne text-6xl md:text-[10rem] tracking-tighter uppercase italic leading-none mb-6 drop-shadow-2xl">Nathan Histed</h1>
-            <p class="text-[10px] md:text-xs tracking-[1em] text-teal-400 font-bold uppercase italic">Sonic Architect &bull; New York</p>
-        </div>
-
-        <div class="glass-ui p-12 max-w-xl w-full text-center">
-            <h2 class="syne text-2xl md:text-3xl mb-2 text-white italic uppercase tracking-tighter">20 SECONDS</h2>
-            <p class="text-gray-400 text-[10px] tracking-[0.4em] uppercase mb-12">The Lead Single &bull; March 20, 2026</p>
-
-            <div id="timer" class="flex justify-center gap-4 mb-14">
-                <div class="countdown-box"><span id="days" class="block text-3xl font-bold">00</span><small class="text-[9px] text-gray-500 uppercase font-black">Days</small></div>
-                <div class="countdown-box"><span id="hours" class="block text-3xl font-bold">00</span><small class="text-[9px] text-gray-500 uppercase font-black">Hours</small></div>
-                <div class="countdown-box"><span id="minutes" class="block text-3xl font-bold">00</span><small class="text-[9px] text-gray-500 uppercase font-black">Mins</small></div>
-                <div class="countdown-box"><span id="seconds" class="block text-3xl font-bold">00</span><small class="text-[9px] text-gray-500 uppercase font-black">Secs</small></div>
-            </div>
-
-            <a href="https://bnd.link/nathanhisted" target="_blank" class="btn-action inline-block">Pre-Save Single</a>
-        </div>
-        <div class="scroll-hint"><i class="fa-solid fa-chevron-down text-2xl"></i></div>
-    </section>
-
-    <!-- ANTHOLOGY SEQUENCE (ALL 17 SLIDES) -->
-    
-    <!-- THE COVER -->
-    <section class="section-container"><div class="content-panel"><img src="IMG_0159.PNG" alt="It's Time Cover" class="anthology-slide"></div></section>
-    
-    <!-- THE STRATEGY -->
-    <section class="section-container"><div class="content-panel"><img src="IMG_0160.PNG" alt="The Strategy" class="anthology-slide"></div></section>
-    
-    <!-- ACT I: AWAKENING (INTERNAL FIGHT) -->
-    <section class="section-container"><div class="content-panel"><img src="IMG_0161.PNG" alt="Part One Header" class="anthology-slide"></div></section>
-    <section class="section-container"><div class="content-panel"><img src="IMG_0162.PNG" alt="Magnet" class="anthology-slide"></div></section>
-    <section class="section-container"><div class="content-panel"><img src="IMG_0163.PNG" alt="20 Seconds" class="anthology-slide"></div></section>
-    
-    <!-- ROCK BOTTOM + EMBED -->
-    <section class="section-container">
-        <div class="content-panel text-center">
-            <img src="IMG_0164.PNG" alt="Rock Bottom" class="anthology-slide mb-12">
-            <div class="glass-ui p-6 inline-block w-full max-w-2xl border-t border-teal-500">
-                <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:15px;" src="https://embed.music.apple.com/us/song/rock-bottom-demo/1876565940"></iframe>
-            </div>
-        </div>
-    </section>
-
-    <section class="section-container"><div class="content-panel"><img src="IMG_0165.PNG" alt="Worthy" class="anthology-slide"></div></section>
-
-    <!-- ACT II: DETACHMENT (EXTERNAL FIGHT) -->
-    <section class="section-container"><div class="content-panel"><img src="IMG_0166.PNG" alt="Part Two Header" class="anthology-slide"></div></section>
-    <section class="section-container"><div class="content-panel"><img src="IMG_0167.PNG" alt="Fake People" class="anthology-slide"></div></section>
-    <section class="section-container"><div class="content-panel"><img src="IMG_0168.PNG" alt="Detachment" class="anthology-slide"></div></section>
-    <section class="section-container"><div class="content-panel"><img src="IMG_0169.PNG" alt="Grace" class="anthology-slide"></div></section>
-
-    <!-- ACT III: RESURRECTION (LIBERATION) -->
-    <section class="section-container"><div class="content-panel"><img src="IMG_0170.PNG" alt="Part Three Header" class="anthology-slide"></div></section>
-    <section class="section-container"><div class="content-panel"><img src="IMG_0171.PNG" alt="That Bitch" class="anthology-slide"></div></section>
-    <section class="section-container"><div class="content-panel"><img src="IMG_0172.PNG" alt="Glory" class="anthology-slide"></div></section>
-    <section class="section-container"><div class="content-panel"><img src="IMG_0173.PNG" alt="The Outro" class="anthology-slide"></div></section>
-    <section class="section-container"><div class="content-panel"><img src="IMG_0174.PNG" alt="Moving Forward" class="anthology-slide"></div></section>
-
-    <!-- FINAL CONNECT SLIDE -->
-    <section class="section-container"><div class="content-panel"><img src="IMG_0175.PNG" alt="Connect & Collaborate" class="anthology-slide"></div></section>
-
-    <!-- COMPLIANCE FOOTER -->
-    <footer class="py-24 text-center border-t border-white/5">
-        <div class="flex flex-col gap-4 mb-16">
-            <a href="mailto:Nathan@NathanHisted.com" class="text-[10px] tracking-[0.5em] text-gray-500 hover:text-white transition-colors">Nathan@NathanHisted.com</a>
-            <a href="mailto:NathanHisted1@gmail.com" class="text-[10px] tracking-[0.5em] text-gray-500 hover:text-white transition-colors uppercase italic font-bold">NathanHisted1@gmail.com</a>
-        </div>
-        <div class="flex justify-center gap-12 text-2xl opacity-20 mb-16">
-            <a href="https://instagram.com/nathanhisted" target="_blank" class="hover:text-teal-400 transition-all"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://tiktok.com/@nathanhisted" target="_blank" class="hover:text-teal-400 transition-all"><i class="fa-brands fa-tiktok"></i></a>
-            <a href="https://youtube.com/nathanhisted" target="_blank" class="hover:text-teal-400 transition-all"><i class="fa-brands fa-youtube"></i></a>
-        </div>
-        <p class="text-[8px] tracking-[2.5em] text-gray-800 uppercase font-black">© 2026 NhP2 MEDIA INC.</p>
-    </footer>
-
-    <script>
-        // Countdown to March 20, 2026
-        const releaseDate = new Date("March 20, 2026 00:00:00").getTime();
-        function updateTimer() {
-            const now = new Date().getTime();
-            const dist = releaseDate - now;
-            const d = Math.floor(dist / (1000 * 60 * 60 * 24));
-            const h = Math.floor((dist % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const m = Math.floor((dist % (1000 * 60 * 60)) / (1000 * 60));
-            const s = Math.floor((dist % (1000 * 60)) / 1000);
-
-            document.getElementById("days").innerText = d.toString().padStart(2, '0');
-            document.getElementById("hours").innerText = h.toString().padStart(2, '0');
-            document.getElementById("minutes").innerText = m.toString().padStart(2, '0');
-            document.getElementById("seconds").innerText = s.toString().padStart(2, '0');
-
-            if (dist < 0) {
-                document.getElementById("timer").innerHTML = "<div class='syne text-3xl text-teal-400 uppercase tracking-tighter animate-pulse italic'>The Era Has Begun</div>";
-            }
-        }
-        setInterval(updateTimer, 1000);
-        updateTimer();
-    </script>
+<p class="p1"><span class="s1">&lt;!DOCTYPE</span><span class="s2"> html</span><span class="s1">&gt;</span></p>
+<p class="p2"><span class="s3">&lt;</span><span class="s1">html</span><span class="s4"> </span><span class="s2">lang</span><span class="s3">=</span><span class="s5">"en"</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s3">&lt;</span><span class="s1">head</span><span class="s3">&gt;</span></p>
+<p class="p3"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">meta</span><span class="s4"> </span><span class="s1">charset</span><span class="s3">=</span><span class="s5">"UTF-8"</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">meta</span><span class="s4"> </span><span class="s2">name</span><span class="s3">=</span><span class="s1">"viewport"</span><span class="s4"> </span><span class="s2">content</span><span class="s3">=</span><span class="s1">"width=device-width, initial-scale=1.0"</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">title</span><span class="s3">&gt;</span><span class="s1">Nathan Histed | Official Artist Site</span><span class="s3">&lt;/</span><span class="s6">title</span><span class="s3">&gt;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p7"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- SEO &amp; Metadata --&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">meta</span><span class="s4"> </span><span class="s2">name</span><span class="s3">=</span><span class="s1">"description"</span><span class="s4"> </span><span class="s2">content</span><span class="s3">=</span><span class="s1">"Official home of Nathan Histed. Explore the 'IT'S TIME' cinematic anthology. Cinematic R&amp;B/Pop."</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">meta</span><span class="s4"> </span><span class="s2">name</span><span class="s3">=</span><span class="s1">"keywords"</span><span class="s4"> </span><span class="s2">content</span><span class="s3">=</span><span class="s1">"Nathan Histed, Rock Bottom, 20 Seconds, Cinematic R&amp;B, Mental Health, Recovery"</span><span class="s3">&gt;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">script</span><span class="s4"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"https://cdn.tailwindcss.com"</span><span class="s3">&gt;&lt;/</span><span class="s6">script</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">link</span><span class="s4"> </span><span class="s2">href</span><span class="s3">=</span><span class="s1">"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"</span><span class="s4"> </span><span class="s2">rel</span><span class="s3">=</span><span class="s1">"stylesheet"</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s1">style</span><span class="s3">&gt;</span></p>
+<p class="p8"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s7">@import</span><span class="s4"> </span><span class="s8">url</span><span class="s4">(</span><span class="s1">'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&amp;family=Syne:wght@700;800&amp;display=swap'</span><span class="s4">);</span></p>
+<p class="p6"><span class="s9"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s6">:root</span><span class="s1"> {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">--accent-teal:</span><span class="s1"> </span><span class="s8">#2BB6AF</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">--accent-gold:</span><span class="s1"> </span><span class="s8">#D4AF37</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">--deep-navy:</span><span class="s1"> </span><span class="s8">#05070A</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s9"></span><br></p>
+<p class="p3"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s6">html</span><span class="s4"> { </span><span class="s1">scroll-behavior:</span><span class="s4"> </span><span class="s8">smooth</span><span class="s4">; }</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s6">body</span><span class="s1"> {</span></p>
+<p class="p3"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">background-color:</span><span class="s4"> </span><span class="s8">var(--deep-navy)</span><span class="s4">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">color:</span><span class="s1"> </span><span class="s8">white</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">font-family:</span><span class="s1"> </span><span class="s10">'Inter'</span><span class="s1">, </span><span class="s8">sans-serif</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">margin:</span><span class="s1"> </span><span class="s11">0</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">overflow-x:</span><span class="s1"> </span><span class="s8">hidden</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s9"></span><br></p>
+<p class="p7"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">/* Fixed Background - Brand Identity */</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s6">.hero-bg</span><span class="s1"> {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">position:</span><span class="s1"> </span><span class="s8">fixed</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">top:</span><span class="s1"> </span><span class="s11">0</span><span class="s1">; </span><span class="s2">left:</span><span class="s1"> </span><span class="s11">0</span><span class="s1">; </span><span class="s2">width:</span><span class="s1"> </span><span class="s11">100%</span><span class="s1">; </span><span class="s2">height:</span><span class="s1"> </span><span class="s11">100%</span><span class="s1">;</span></p>
+<p class="p9"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s2">background:</span><span class="s4"> </span><span class="s1">linear-gradient(to</span><span class="s4"> </span><span class="s1">bottom</span><span class="s4">, </span><span class="s1">rgba(</span><span class="s11">5</span><span class="s4">, </span><span class="s11">7</span><span class="s4">, </span><span class="s11">10</span><span class="s4">, </span><span class="s11">0.2</span><span class="s1">)</span><span class="s4">, </span><span class="s1">rgba(</span><span class="s11">5</span><span class="s4">, </span><span class="s11">7</span><span class="s4">, </span><span class="s11">10</span><span class="s4">, </span><span class="s11">0.98</span><span class="s1">))</span><span class="s4">,<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s8">url</span><span class="s1">(</span><span class="s10">'image.png'</span><span class="s1">); </span><span class="s12">/* Main Hero Image */</span></p>
+<p class="p3"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">background-size:</span><span class="s4"> </span><span class="s8">cover</span><span class="s4">;</span></p>
+<p class="p3"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">background-position:</span><span class="s4"> </span><span class="s8">center</span><span class="s4">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">z-index:</span><span class="s1"> </span><span class="s11">-1</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s9"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s6">.syne</span><span class="s1"> { </span><span class="s2">font-family:</span><span class="s1"> </span><span class="s10">'Syne'</span><span class="s1">, </span><span class="s8">sans-serif</span><span class="s1">; }</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">.section-container</span><span class="s4"> {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">min-height:</span><span class="s1"> </span><span class="s11">100vh</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">display:</span><span class="s1"> </span><span class="s8">flex</span><span class="s1">;</span></p>
+<p class="p3"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">flex-direction:</span><span class="s4"> </span><span class="s8">column</span><span class="s4">;</span></p>
+<p class="p3"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">justify-content:</span><span class="s4"> </span><span class="s8">center</span><span class="s4">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">align-items:</span><span class="s1"> </span><span class="s8">center</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">padding:</span><span class="s1"> </span><span class="s11">4rem</span><span class="s1"> </span><span class="s11">1rem</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">position:</span><span class="s1"> </span><span class="s8">relative</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s9"></span><br></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">.content-panel</span><span class="s4"> {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">width:</span><span class="s1"> </span><span class="s11">100%</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">max-width:</span><span class="s1"> </span><span class="s11">1100px</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">animation:</span><span class="s1"> </span><span class="s8">fadeIn</span><span class="s1"> </span><span class="s11">1.5s</span><span class="s1"> </span><span class="s8">ease-out</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s9"></span><br></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">.anthology-slide</span><span class="s4"> {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">width:</span><span class="s1"> </span><span class="s11">100%</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">border-radius:</span><span class="s1"> </span><span class="s11">12px</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">box-shadow:</span><span class="s1"> </span><span class="s11">0</span><span class="s1"> </span><span class="s11">40px</span><span class="s1"> </span><span class="s11">100px</span><span class="s1"> </span><span class="s8">rgba(</span><span class="s11">0</span><span class="s1">,</span><span class="s11">0</span><span class="s1">,</span><span class="s11">0</span><span class="s1">,</span><span class="s11">0.9</span><span class="s8">)</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">border:</span><span class="s1"> </span><span class="s11">1px</span><span class="s1"> </span><span class="s8">solid</span><span class="s1"> </span><span class="s8">rgba(</span><span class="s11">255</span><span class="s1">,</span><span class="s11">255</span><span class="s1">,</span><span class="s11">255</span><span class="s1">,</span><span class="s11">0.05</span><span class="s8">)</span><span class="s1">;</span></p>
+<p class="p9"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s2">transition:</span><span class="s4"> </span><span class="s1">transform</span><span class="s4"> </span><span class="s11">0.6s</span><span class="s4"> </span><span class="s1">cubic-bezier(</span><span class="s11">0.2</span><span class="s4">, </span><span class="s11">0.8</span><span class="s4">, </span><span class="s11">0.2</span><span class="s4">, </span><span class="s11">1</span><span class="s1">)</span><span class="s4">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">.anthology-slide:hover</span><span class="s4"> { </span><span class="s2">transform:</span><span class="s4"> </span><span class="s8">scale(</span><span class="s11">1.015</span><span class="s8">)</span><span class="s4">; }</span></p>
+<p class="p6"><span class="s9"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s6">.glass-ui</span><span class="s1"> {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">background:</span><span class="s1"> </span><span class="s8">rgba(</span><span class="s11">255</span><span class="s1">, </span><span class="s11">255</span><span class="s1">, </span><span class="s11">255</span><span class="s1">, </span><span class="s11">0.03</span><span class="s8">)</span><span class="s1">;</span></p>
+<p class="p3"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">backdrop-filter:</span><span class="s4"> </span><span class="s8">blur(</span><span class="s11">30px</span><span class="s8">)</span><span class="s4">;</span></p>
+<p class="p3"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">-webkit-backdrop-filter:</span><span class="s4"> </span><span class="s8">blur(</span><span class="s11">30px</span><span class="s8">)</span><span class="s4">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">border:</span><span class="s1"> </span><span class="s11">1px</span><span class="s1"> </span><span class="s8">solid</span><span class="s1"> </span><span class="s8">rgba(</span><span class="s11">255</span><span class="s1">, </span><span class="s11">255</span><span class="s1">, </span><span class="s11">255</span><span class="s1">, </span><span class="s11">0.1</span><span class="s8">)</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">border-radius:</span><span class="s1"> </span><span class="s11">32px</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s9"></span><br></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">.countdown-box</span><span class="s4"> {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">background:</span><span class="s1"> </span><span class="s8">rgba(</span><span class="s11">0</span><span class="s1">,</span><span class="s11">0</span><span class="s1">,</span><span class="s11">0</span><span class="s1">,</span><span class="s11">0.8</span><span class="s8">)</span><span class="s1">;</span></p>
+<p class="p9"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s2">border-bottom:</span><span class="s4"> </span><span class="s11">2px</span><span class="s4"> </span><span class="s1">solid</span><span class="s4"> </span><span class="s1">var(--accent-teal)</span><span class="s4">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">padding:</span><span class="s1"> </span><span class="s11">1.25rem</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">border-radius:</span><span class="s1"> </span><span class="s11">20px</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">min-width:</span><span class="s1"> </span><span class="s11">85px</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s9"></span><br></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">.btn-action</span><span class="s4"> {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">background:</span><span class="s1"> </span><span class="s8">white</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">color:</span><span class="s1"> </span><span class="s8">black</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">font-weight:</span><span class="s1"> </span><span class="s11">900</span><span class="s1">;</span></p>
+<p class="p3"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">text-transform:</span><span class="s4"> </span><span class="s8">uppercase</span><span class="s4">;</span></p>
+<p class="p3"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">letter-spacing:</span><span class="s4"> </span><span class="s11">0.2em</span><span class="s4">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">padding:</span><span class="s1"> </span><span class="s11">1.5rem</span><span class="s1"> </span><span class="s11">3.5rem</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">border-radius:</span><span class="s1"> </span><span class="s11">9999px</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">transition:</span><span class="s1"> </span><span class="s8">all</span><span class="s1"> </span><span class="s11">0.4s</span><span class="s1"> </span><span class="s8">ease</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">font-size:</span><span class="s1"> </span><span class="s11">0.8rem</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">.btn-action:hover</span><span class="s4"> {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">transform:</span><span class="s1"> </span><span class="s8">scale(</span><span class="s11">1.05</span><span class="s8">)</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">box-shadow:</span><span class="s1"> </span><span class="s11">0</span><span class="s1"> </span><span class="s11">0</span><span class="s1"> </span><span class="s11">50px</span><span class="s1"> </span><span class="s8">rgba(</span><span class="s11">255</span><span class="s1">,</span><span class="s11">255</span><span class="s1">,</span><span class="s11">255</span><span class="s1">,</span><span class="s11">0.4</span><span class="s8">)</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p6"><span class="s9"></span><br></p>
+<p class="p3"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s7">@keyframes</span><span class="s4"> </span><span class="s8">fadeIn</span><span class="s4"> { </span><span class="s8">from</span><span class="s4"> { </span><span class="s1">opacity:</span><span class="s4"> </span><span class="s11">0</span><span class="s4">; </span><span class="s1">transform:</span><span class="s4"> </span><span class="s8">translateY(</span><span class="s11">40px</span><span class="s8">)</span><span class="s4">; } </span><span class="s8">to</span><span class="s4"> { </span><span class="s1">opacity:</span><span class="s4"> </span><span class="s11">1</span><span class="s4">; </span><span class="s1">transform:</span><span class="s4"> </span><span class="s8">translateY(</span><span class="s11">0</span><span class="s8">)</span><span class="s4">; } }</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">.scroll-hint</span><span class="s4"> {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">position:</span><span class="s1"> </span><span class="s8">absolute</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">bottom:</span><span class="s1"> </span><span class="s11">3rem</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">left:</span><span class="s1"> </span><span class="s11">50%</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">transform:</span><span class="s1"> </span><span class="s8">translateX(</span><span class="s11">-50%</span><span class="s8">)</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">animation:</span><span class="s1"> </span><span class="s8">bounce</span><span class="s1"> </span><span class="s11">2s</span><span class="s1"> </span><span class="s8">infinite</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">opacity:</span><span class="s1"> </span><span class="s11">0.5</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p9"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s7">@keyframes</span><span class="s4"> </span><span class="s1">bounce</span><span class="s4"> { </span><span class="s11">0%</span><span class="s4">, </span><span class="s11">20%</span><span class="s4">, </span><span class="s11">50%</span><span class="s4">, </span><span class="s11">80%</span><span class="s4">, </span><span class="s11">100%</span><span class="s4"> {</span><span class="s2">transform:</span><span class="s4"> </span><span class="s1">translateY(</span><span class="s11">0</span><span class="s1">)</span><span class="s4">;} </span><span class="s11">40%</span><span class="s4"> {</span><span class="s2">transform:</span><span class="s4"> </span><span class="s1">translateY(</span><span class="s11">-10px</span><span class="s1">)</span><span class="s4">;} </span><span class="s11">60%</span><span class="s4"> {</span><span class="s2">transform:</span><span class="s4"> </span><span class="s1">translateY(</span><span class="s11">-5px</span><span class="s1">)</span><span class="s4">;} }</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s1">style</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s3">&lt;/</span><span class="s1">head</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s3">&lt;</span><span class="s1">body</span><span class="s3">&gt;</span></p>
+<p class="p6"><span class="s9"></span><br></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"hero-bg"</span><span class="s3">&gt;&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
+<p class="p6"><span class="s9"></span><br></p>
+<p class="p7"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- 1. THE LAUNCH HUB --&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">section</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"section-container"</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-center mb-12"</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s6">h1</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"syne text-6xl md:text-[10rem] tracking-tighter uppercase italic leading-none mb-6 drop-shadow-2xl"</span><span class="s3">&gt;</span><span class="s4">Nathan Histed</span><span class="s3">&lt;/</span><span class="s6">h1</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s6">p</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-[10px] md:text-xs tracking-[1em] text-teal-400 font-bold uppercase italic"</span><span class="s3">&gt;</span><span class="s4">Sonic Architect &amp;bull; New York</span><span class="s3">&lt;/</span><span class="s6">p</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
+<p class="p6"><span class="s9"></span><br></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"glass-ui p-12 max-w-xl w-full text-center"</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s6">h2</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"syne text-2xl md:text-3xl mb-2 text-white italic uppercase tracking-tighter"</span><span class="s3">&gt;</span><span class="s4">20 SECONDS</span><span class="s3">&lt;/</span><span class="s6">h2</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s6">p</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-gray-400 text-[10px] tracking-[0.4em] uppercase mb-12"</span><span class="s3">&gt;</span><span class="s4">The Lead Single &amp;bull; March 20, 2026</span><span class="s3">&lt;/</span><span class="s6">p</span><span class="s3">&gt;</span></p>
+<p class="p6"><span class="s9"></span><br></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"timer"</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex justify-center gap-4 mb-14"</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"countdown-box"</span><span class="s3">&gt;&lt;</span><span class="s6">span</span><span class="s4"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"days"</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"block text-3xl font-bold"</span><span class="s3">&gt;</span><span class="s4">00</span><span class="s3">&lt;/</span><span class="s6">span</span><span class="s3">&gt;&lt;</span><span class="s6">small</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-[9px] text-gray-500 uppercase font-black"</span><span class="s3">&gt;</span><span class="s4">Days</span><span class="s3">&lt;/</span><span class="s6">small</span><span class="s3">&gt;&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"countdown-box"</span><span class="s3">&gt;&lt;</span><span class="s6">span</span><span class="s4"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"hours"</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"block text-3xl font-bold"</span><span class="s3">&gt;</span><span class="s4">00</span><span class="s3">&lt;/</span><span class="s6">span</span><span class="s3">&gt;&lt;</span><span class="s6">small</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-[9px] text-gray-500 uppercase font-black"</span><span class="s3">&gt;</span><span class="s4">Hours</span><span class="s3">&lt;/</span><span class="s6">small</span><span class="s3">&gt;&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"countdown-box"</span><span class="s3">&gt;&lt;</span><span class="s6">span</span><span class="s4"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"minutes"</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"block text-3xl font-bold"</span><span class="s3">&gt;</span><span class="s4">00</span><span class="s3">&lt;/</span><span class="s6">span</span><span class="s3">&gt;&lt;</span><span class="s6">small</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-[9px] text-gray-500 uppercase font-black"</span><span class="s3">&gt;</span><span class="s4">Mins</span><span class="s3">&lt;/</span><span class="s6">small</span><span class="s3">&gt;&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"countdown-box"</span><span class="s3">&gt;&lt;</span><span class="s6">span</span><span class="s4"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"seconds"</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"block text-3xl font-bold"</span><span class="s3">&gt;</span><span class="s4">00</span><span class="s3">&lt;/</span><span class="s6">span</span><span class="s3">&gt;&lt;</span><span class="s6">small</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-[9px] text-gray-500 uppercase font-black"</span><span class="s3">&gt;</span><span class="s4">Secs</span><span class="s3">&lt;/</span><span class="s6">small</span><span class="s3">&gt;&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
+<p class="p6"><span class="s9"></span><br></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s6">a</span><span class="s4"> </span><span class="s2">href</span><span class="s3">=</span><span class="s1">"https://bnd.link/nathanhisted"</span><span class="s4"> </span><span class="s2">target</span><span class="s3">=</span><span class="s1">"_blank"</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"btn-action inline-block"</span><span class="s3">&gt;</span><span class="s4">Pre-Save Single</span><span class="s3">&lt;/</span><span class="s6">a</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"scroll-hint"</span><span class="s3">&gt;&lt;</span><span class="s6">i</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"fa-solid fa-chevron-down text-2xl"</span><span class="s3">&gt;&lt;/</span><span class="s6">i</span><span class="s3">&gt;&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s1">section</span><span class="s3">&gt;</span></p>
+<p class="p6"><span class="s9"></span><br></p>
+<p class="p7"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- ANTHOLOGY SEQUENCE (ALL 17 SLIDES) --&gt;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p7"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- THE COVER --&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">section</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"section-container"</span><span class="s3">&gt;&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"content-panel"</span><span class="s3">&gt;&lt;</span><span class="s6">img</span><span class="s4"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"IMG_0159.PNG"</span><span class="s4"> </span><span class="s2">alt</span><span class="s3">=</span><span class="s1">"It's Time Cover"</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"anthology-slide"</span><span class="s3">&gt;&lt;/</span><span class="s6">div</span><span class="s3">&gt;&lt;/</span><span class="s6">section</span><span class="s3">&gt;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p7"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- THE STRATEGY --&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">section</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"section-container"</span><span class="s3">&gt;&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"content-panel"</span><span class="s3">&gt;&lt;</span><span class="s6">img</span><span class="s4"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"IMG_0160.PNG"</span><span class="s4"> </span><span class="s2">alt</span><span class="s3">=</span><span class="s1">"The Strategy"</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"anthology-slide"</span><span class="s3">&gt;&lt;/</span><span class="s6">div</span><span class="s3">&gt;&lt;/</span><span class="s6">section</span><span class="s3">&gt;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p7"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- ACT I: AWAKENING (INTERNAL FIGHT) --&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">section</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"section-container"</span><span class="s3">&gt;&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"content-panel"</span><span class="s3">&gt;&lt;</span><span class="s6">img</span><span class="s4"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"IMG_0161.PNG"</span><span class="s4"> </span><span class="s2">alt</span><span class="s3">=</span><span class="s1">"Part One Header"</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"anthology-slide"</span><span class="s3">&gt;&lt;/</span><span class="s6">div</span><span class="s3">&gt;&lt;/</span><span class="s6">section</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">section</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"section-container"</span><span class="s3">&gt;&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"content-panel"</span><span class="s3">&gt;&lt;</span><span class="s6">img</span><span class="s4"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"IMG_0162.PNG"</span><span class="s4"> </span><span class="s2">alt</span><span class="s3">=</span><span class="s1">"Magnet"</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"anthology-slide"</span><span class="s3">&gt;&lt;/</span><span class="s6">div</span><span class="s3">&gt;&lt;/</span><span class="s6">section</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">section</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"section-container"</span><span class="s3">&gt;&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"content-panel"</span><span class="s3">&gt;&lt;</span><span class="s6">img</span><span class="s4"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"IMG_0163.PNG"</span><span class="s4"> </span><span class="s2">alt</span><span class="s3">=</span><span class="s1">"20 Seconds"</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"anthology-slide"</span><span class="s3">&gt;&lt;/</span><span class="s6">div</span><span class="s3">&gt;&lt;/</span><span class="s6">section</span><span class="s3">&gt;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p7"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- ROCK BOTTOM + EMBED --&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">section</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"section-container"</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"content-panel text-center"</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s6">img</span><span class="s4"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"IMG_0164.PNG"</span><span class="s4"> </span><span class="s2">alt</span><span class="s3">=</span><span class="s1">"Rock Bottom"</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"anthology-slide mb-12"</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"glass-ui p-6 inline-block w-full max-w-2xl border-t border-teal-500"</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s6">iframe</span><span class="s4"> </span><span class="s2">allow</span><span class="s3">=</span><span class="s1">"autoplay *; encrypted-media *; fullscreen *; clipboard-write"</span><span class="s4"> </span><span class="s2">frameborder</span><span class="s3">=</span><span class="s1">"0"</span><span class="s4"> </span><span class="s2">height</span><span class="s3">=</span><span class="s1">"175"</span><span class="s4"> </span><span class="s2">style</span><span class="s3">=</span><span class="s1">"width:100%;max-width:660px;overflow:hidden;border-radius:15px;"</span><span class="s4"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"https://embed.music.apple.com/us/song/rock-bottom-demo/1876565940"</span><span class="s3">&gt;&lt;/</span><span class="s6">iframe</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s1">section</span><span class="s3">&gt;</span></p>
+<p class="p6"><span class="s9"></span><br></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">section</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"section-container"</span><span class="s3">&gt;&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"content-panel"</span><span class="s3">&gt;&lt;</span><span class="s6">img</span><span class="s4"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"IMG_0165.PNG"</span><span class="s4"> </span><span class="s2">alt</span><span class="s3">=</span><span class="s1">"Worthy"</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"anthology-slide"</span><span class="s3">&gt;&lt;/</span><span class="s6">div</span><span class="s3">&gt;&lt;/</span><span class="s6">section</span><span class="s3">&gt;</span></p>
+<p class="p6"><span class="s9"></span><br></p>
+<p class="p7"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- ACT II: DETACHMENT (EXTERNAL FIGHT) --&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">section</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"section-container"</span><span class="s3">&gt;&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"content-panel"</span><span class="s3">&gt;&lt;</span><span class="s6">img</span><span class="s4"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"IMG_0166.PNG"</span><span class="s4"> </span><span class="s2">alt</span><span class="s3">=</span><span class="s1">"Part Two Header"</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"anthology-slide"</span><span class="s3">&gt;&lt;/</span><span class="s6">div</span><span class="s3">&gt;&lt;/</span><span class="s6">section</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">section</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"section-container"</span><span class="s3">&gt;&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"content-panel"</span><span class="s3">&gt;&lt;</span><span class="s6">img</span><span class="s4"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"IMG_0167.PNG"</span><span class="s4"> </span><span class="s2">alt</span><span class="s3">=</span><span class="s1">"Fake People"</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"anthology-slide"</span><span class="s3">&gt;&lt;/</span><span class="s6">div</span><span class="s3">&gt;&lt;/</span><span class="s6">section</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">section</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"section-container"</span><span class="s3">&gt;&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"content-panel"</span><span class="s3">&gt;&lt;</span><span class="s6">img</span><span class="s4"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"IMG_0168.PNG"</span><span class="s4"> </span><span class="s2">alt</span><span class="s3">=</span><span class="s1">"Detachment"</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"anthology-slide"</span><span class="s3">&gt;&lt;/</span><span class="s6">div</span><span class="s3">&gt;&lt;/</span><span class="s6">section</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">section</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"section-container"</span><span class="s3">&gt;&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"content-panel"</span><span class="s3">&gt;&lt;</span><span class="s6">img</span><span class="s4"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"IMG_0169.PNG"</span><span class="s4"> </span><span class="s2">alt</span><span class="s3">=</span><span class="s1">"Grace"</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"anthology-slide"</span><span class="s3">&gt;&lt;/</span><span class="s6">div</span><span class="s3">&gt;&lt;/</span><span class="s6">section</span><span class="s3">&gt;</span></p>
+<p class="p6"><span class="s9"></span><br></p>
+<p class="p7"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- ACT III: RESURRECTION (LIBERATION) --&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">section</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"section-container"</span><span class="s3">&gt;&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"content-panel"</span><span class="s3">&gt;&lt;</span><span class="s6">img</span><span class="s4"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"IMG_0170.PNG"</span><span class="s4"> </span><span class="s2">alt</span><span class="s3">=</span><span class="s1">"Part Three Header"</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"anthology-slide"</span><span class="s3">&gt;&lt;/</span><span class="s6">div</span><span class="s3">&gt;&lt;/</span><span class="s6">section</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">section</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"section-container"</span><span class="s3">&gt;&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"content-panel"</span><span class="s3">&gt;&lt;</span><span class="s6">img</span><span class="s4"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"IMG_0171.PNG"</span><span class="s4"> </span><span class="s2">alt</span><span class="s3">=</span><span class="s1">"That Bitch"</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"anthology-slide"</span><span class="s3">&gt;&lt;/</span><span class="s6">div</span><span class="s3">&gt;&lt;/</span><span class="s6">section</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">section</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"section-container"</span><span class="s3">&gt;&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"content-panel"</span><span class="s3">&gt;&lt;</span><span class="s6">img</span><span class="s4"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"IMG_0172.PNG"</span><span class="s4"> </span><span class="s2">alt</span><span class="s3">=</span><span class="s1">"Glory"</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"anthology-slide"</span><span class="s3">&gt;&lt;/</span><span class="s6">div</span><span class="s3">&gt;&lt;/</span><span class="s6">section</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">section</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"section-container"</span><span class="s3">&gt;&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"content-panel"</span><span class="s3">&gt;&lt;</span><span class="s6">img</span><span class="s4"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"IMG_0173.PNG"</span><span class="s4"> </span><span class="s2">alt</span><span class="s3">=</span><span class="s1">"The Outro"</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"anthology-slide"</span><span class="s3">&gt;&lt;/</span><span class="s6">div</span><span class="s3">&gt;&lt;/</span><span class="s6">section</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">section</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"section-container"</span><span class="s3">&gt;&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"content-panel"</span><span class="s3">&gt;&lt;</span><span class="s6">img</span><span class="s4"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"IMG_0174.PNG"</span><span class="s4"> </span><span class="s2">alt</span><span class="s3">=</span><span class="s1">"Moving Forward"</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"anthology-slide"</span><span class="s3">&gt;&lt;/</span><span class="s6">div</span><span class="s3">&gt;&lt;/</span><span class="s6">section</span><span class="s3">&gt;</span></p>
+<p class="p6"><span class="s9"></span><br></p>
+<p class="p7"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- FINAL CONNECT SLIDE --&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">section</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"section-container"</span><span class="s3">&gt;&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"content-panel"</span><span class="s3">&gt;&lt;</span><span class="s6">img</span><span class="s4"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"IMG_0175.PNG"</span><span class="s4"> </span><span class="s2">alt</span><span class="s3">=</span><span class="s1">"Connect &amp; Collaborate"</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"anthology-slide"</span><span class="s3">&gt;&lt;/</span><span class="s6">div</span><span class="s3">&gt;&lt;/</span><span class="s6">section</span><span class="s3">&gt;</span></p>
+<p class="p6"><span class="s9"></span><br></p>
+<p class="p7"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- COMPLIANCE FOOTER --&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">footer</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"py-24 text-center border-t border-white/5"</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex flex-col gap-4 mb-16"</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s6">a</span><span class="s4"> </span><span class="s2">href</span><span class="s3">=</span><span class="s1">"mailto:Nathan@NathanHisted.com"</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-[10px] tracking-[0.5em] text-gray-500 hover:text-white transition-colors"</span><span class="s3">&gt;</span><span class="s4">Nathan@NathanHisted.com</span><span class="s3">&lt;/</span><span class="s6">a</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s6">a</span><span class="s4"> </span><span class="s2">href</span><span class="s3">=</span><span class="s1">"mailto:NathanHisted1@gmail.com"</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-[10px] tracking-[0.5em] text-gray-500 hover:text-white transition-colors uppercase italic font-bold"</span><span class="s3">&gt;</span><span class="s4">NathanHisted1@gmail.com</span><span class="s3">&lt;/</span><span class="s6">a</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex justify-center gap-12 text-2xl opacity-20 mb-16"</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s6">a</span><span class="s4"> </span><span class="s2">href</span><span class="s3">=</span><span class="s1">"https://instagram.com/nathanhisted"</span><span class="s4"> </span><span class="s2">target</span><span class="s3">=</span><span class="s1">"_blank"</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"hover:text-teal-400 transition-all"</span><span class="s3">&gt;&lt;</span><span class="s6">i</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"fa-brands fa-instagram"</span><span class="s3">&gt;&lt;/</span><span class="s6">i</span><span class="s3">&gt;&lt;/</span><span class="s6">a</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s6">a</span><span class="s4"> </span><span class="s2">href</span><span class="s3">=</span><span class="s1">"https://tiktok.com/@nathanhisted"</span><span class="s4"> </span><span class="s2">target</span><span class="s3">=</span><span class="s1">"_blank"</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"hover:text-teal-400 transition-all"</span><span class="s3">&gt;&lt;</span><span class="s6">i</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"fa-brands fa-tiktok"</span><span class="s3">&gt;&lt;/</span><span class="s6">i</span><span class="s3">&gt;&lt;/</span><span class="s6">a</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s6">a</span><span class="s4"> </span><span class="s2">href</span><span class="s3">=</span><span class="s1">"https://youtube.com/nathanhisted"</span><span class="s4"> </span><span class="s2">target</span><span class="s3">=</span><span class="s1">"_blank"</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"hover:text-teal-400 transition-all"</span><span class="s3">&gt;&lt;</span><span class="s6">i</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"fa-brands fa-youtube"</span><span class="s3">&gt;&lt;/</span><span class="s6">i</span><span class="s3">&gt;&lt;/</span><span class="s6">a</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s6">p</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-[8px] tracking-[2.5em] text-gray-800 uppercase font-black"</span><span class="s3">&gt;</span><span class="s4">© 2026 NhP2 MEDIA INC.</span><span class="s3">&lt;/</span><span class="s6">p</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s1">footer</span><span class="s3">&gt;</span></p>
+<p class="p6"><span class="s9"></span><br></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s1">script</span><span class="s3">&gt;</span></p>
+<p class="p7"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">// Countdown to March 20, 2026</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s7">const</span><span class="s1"> releaseDate = </span><span class="s7">new</span><span class="s1"> </span><span class="s13">Date</span><span class="s1">(</span><span class="s10">"March 20, 2026 00:00:00"</span><span class="s1">).getTime();</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s7">function</span><span class="s1"> updateTimer() {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">const</span><span class="s1"> now = </span><span class="s7">new</span><span class="s1"> </span><span class="s13">Date</span><span class="s1">().getTime();</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">const</span><span class="s1"> dist = releaseDate - now;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">const</span><span class="s1"> d = </span><span class="s13">Math</span><span class="s1">.floor(dist / (</span><span class="s14">1000</span><span class="s1"> * </span><span class="s14">60</span><span class="s1"> * </span><span class="s14">60</span><span class="s1"> * </span><span class="s14">24</span><span class="s1">));</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">const</span><span class="s1"> h = </span><span class="s13">Math</span><span class="s1">.floor((dist % (</span><span class="s14">1000</span><span class="s1"> * </span><span class="s14">60</span><span class="s1"> * </span><span class="s14">60</span><span class="s1"> * </span><span class="s14">24</span><span class="s1">)) / (</span><span class="s14">1000</span><span class="s1"> * </span><span class="s14">60</span><span class="s1"> * </span><span class="s14">60</span><span class="s1">));</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">const</span><span class="s1"> m = </span><span class="s13">Math</span><span class="s1">.floor((dist % (</span><span class="s14">1000</span><span class="s1"> * </span><span class="s14">60</span><span class="s1"> * </span><span class="s14">60</span><span class="s1">)) / (</span><span class="s14">1000</span><span class="s1"> * </span><span class="s14">60</span><span class="s1">));</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">const</span><span class="s1"> s = </span><span class="s13">Math</span><span class="s1">.floor((dist % (</span><span class="s14">1000</span><span class="s1"> * </span><span class="s14">60</span><span class="s1">)) / </span><span class="s14">1000</span><span class="s1">);</span></p>
+<p class="p6"><span class="s9"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById(</span><span class="s10">"days"</span><span class="s1">).innerText = d.toString().padStart(</span><span class="s14">2</span><span class="s1">, </span><span class="s10">'0'</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById(</span><span class="s10">"hours"</span><span class="s1">).innerText = h.toString().padStart(</span><span class="s14">2</span><span class="s1">, </span><span class="s10">'0'</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById(</span><span class="s10">"minutes"</span><span class="s1">).innerText = m.toString().padStart(</span><span class="s14">2</span><span class="s1">, </span><span class="s10">'0'</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById(</span><span class="s10">"seconds"</span><span class="s1">).innerText = s.toString().padStart(</span><span class="s14">2</span><span class="s1">, </span><span class="s10">'0'</span><span class="s1">);</span></p>
+<p class="p6"><span class="s9"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">if</span><span class="s1"> (dist &lt; </span><span class="s14">0</span><span class="s1">) {</span></p>
+<p class="p8"><span class="s4"><span class="Apple-converted-space">                </span>document.getElementById(</span><span class="s1">"timer"</span><span class="s4">).innerHTML = </span><span class="s1">"&lt;div class='syne text-3xl text-teal-400 uppercase tracking-tighter animate-pulse italic'&gt;The Era Has Begun&lt;/div&gt;"</span><span class="s4">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>setInterval(updateTimer, </span><span class="s14">1000</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>updateTimer();</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s1">script</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s3">&lt;/</span><span class="s1">body</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s3">&lt;/</span><span class="s1">html</span><span class="s3">&gt;</span></p>
 </body>
 </html>
